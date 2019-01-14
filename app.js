@@ -25,7 +25,8 @@ var commentRoutes    = require("./routes/comments"),
 //============================
 // EXPRESS AND MONGOOSE SETUP
 //============================
-mongoose.connect("mongodb://localhost/macfood"); // Creates a MacFood Database
+// mongoose.connect("mongodb://localhost/macfood"); // Creates a MacFood Database
+mongoose.connect("mongodb://dananjay1999:july13@ds155864.mlab.com:55864/macfood");
 app.use(bodyParser.urlencoded({extended: true})); 
 app.set("view engine", "ejs"); // Sets the default view engine as "ejs"
 app.use(express.static(__dirname + "/public")); // Tells express to run the "public" directory. (Express only runs app.js and the "views" directory as default)
